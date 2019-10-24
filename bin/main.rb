@@ -60,7 +60,8 @@ class Interface
   def play_game
     # check player
     puts 'select position of the symbol on the board'
-    position = gets.chomp
+    gets.chomp
+    # save the value in a position variable
     # check if it is a valid move
     # display the symbol on the position choosen
     # save the move

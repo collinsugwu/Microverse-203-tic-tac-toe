@@ -47,4 +47,31 @@ class Interface
     gets.chomp
     # Check if the symbol is correct
   end
+
+  def choose_first_player
+    # form the player_symbol array, choose the player with the symbol X
+    # to play first
+  end
+
+  def show_board
+    # display the tic tac toe board
+  end
+
+  def play_game
+    # check player
+    puts 'select position of the symbol on the board'
+    position = gets.chomp
+    # check if it is a valid move
+    # display the symbol on the position choosen
+    # save the move
+    # check if there is a winner or if a draw else repeat the process with the next play
+  end
+
+  def display_winner
+    # display the winner of the game
+  end
+
+  def clear_board
+    # reset the board for new game
+  end
 end

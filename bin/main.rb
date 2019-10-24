@@ -43,7 +43,7 @@ class Interface
     gets.chomp
     # Check if the symbol is correct
     puts 'Player 2, what symbol do you want to use?'
-    print 'Please type \"X\" or \"O\":'
+    print 'Please type "X" or "O":'
     gets.chomp
     # Check if the symbol is correct
   end
@@ -53,7 +53,21 @@ class Interface
     # to play first
   end
 
+  def clear_screen
+    # this method clears the screen
+  end
+
   def show_board
+    puts 'this is the board you are playing on'
+    puts 'Player 1: Collins (X)           Player 2: Jair (O)'
+    puts
+    puts '1|2 |3                         X | O | X'
+    puts '-------                        ---------'
+    puts '4|5 |6                           | X |'
+    puts '-------                        ---------'
+    puts '7|8 |10                          | O | X'
+    puts
+
     # display the tic tac toe board
   end
 
@@ -69,6 +83,7 @@ class Interface
   end
 
   def display_winner
+    puts 'Player 1 is the winner'
     # display the winner of the game
   end
 
@@ -76,3 +91,11 @@ class Interface
     # reset the board for new game
   end
 end
+
+interface = Interface.new
+interface.welcome
+interface.ask_name
+interface.select_symbol
+interface.show_board
+interface.play_game
+interface.display_winner

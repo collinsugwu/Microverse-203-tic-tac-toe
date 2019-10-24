@@ -47,6 +47,4 @@ class Interface
     gets.chomp
     # Check if the symbol is correct
   end
-
-
 end

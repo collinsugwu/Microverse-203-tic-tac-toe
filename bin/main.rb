@@ -37,7 +37,7 @@ class Interface
     @player
   end
 
-  def select_symbol
+  def play_turn
     puts 'Player 1, what symbol do you want to use?'
     print 'Please type \"X\" or \"O\":'
     gets.chomp
@@ -71,7 +71,7 @@ class Interface
     # display the tic tac toe board
   end
 
-  def play_game
+  def play_turn
     # check player
     puts 'select position of the symbol on the board'
     gets.chomp
@@ -93,9 +93,26 @@ class Interface
 end
 
 interface = Interface.new
+puts 'Creating Board' # board = Board.new
+puts 'Creating player 1 with "X" mark' # player1 = Player.new('X')
+puts 'Creating player 2 with "O" mark' # player2 = Player.new('O')
+
 interface.welcome
-interface.ask_name
-interface.select_symbol
-interface.show_board
-interface.play_game
+
+turn = 1 # needed for the mockup
+while turn < 5 # while !board.empty?
+  interface.clear_screen
+  interface.show_board
+  if turn.odd?
+    interface.play_turn('player1') # board.add(interface.play_turn('player1'))
+    puts 'checking if the move is valid'
+    puts 'adding the mark from the player 1 to the board'
+  else
+    interface.play_turn('player2') # board.add(interface.play_turn('player1'))
+    puts 'checking if the move is valid'
+    puts 'adding the mark from the player 2 to the board'
+  end
+  turn += 1 # simulating the turn order. The while loop should break if the board is full of if there is a winner
+end
+
 interface.display_winner

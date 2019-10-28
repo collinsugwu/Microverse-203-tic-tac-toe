@@ -26,35 +26,12 @@ class Interface
   def welcome
     puts 'Welcome to the Tic-Tac-Toe game'
     puts 'TODO: Explain rules'
-  end
-
-  def ask_name
-    @player = Array.new(2, '')
-    puts 'Player 1, what\'s your name?'
-    @player[0] = gets.chomp
-    puts 'Player 2, what\'s your name?'
-    @player[1] = gets.chomp
-    @player
-  end
-
-  def play_turn
-    puts 'Player 1, what symbol do you want to use?'
-    print 'Please type \"X\" or \"O\":'
+    puts 'Press ENTER key to continue'
     gets.chomp
-    # Check if the symbol is correct
-    puts 'Player 2, what symbol do you want to use?'
-    print 'Please type "X" or "O":'
-    gets.chomp
-    # Check if the symbol is correct
-  end
-
-  def choose_first_player
-    # form the player_symbol array, choose the player with the symbol X
-    # to play first
   end
 
   def clear_screen
-    # this method clears the screen
+    Gem.win_platform? ? (system 'cls') : (system 'clear')
   end
 
   def show_board
@@ -67,13 +44,11 @@ class Interface
     puts '-------                        ---------'
     puts '7|8 |10                          | O | X'
     puts
-
-    # display the tic tac toe board
   end
 
-  def play_turn
+  def play_turn(player)
     # check player
-    puts 'select position of the symbol on the board'
+    puts "#{player}: select position of the symbol on the board"
     gets.chomp
     # save the value in a position variable
     # check if it is a valid move
@@ -83,36 +58,44 @@ class Interface
   end
 
   def display_winner
+    puts 'Checking if there is a winner, or there is a draw...'
+    # Calling the logic method to check winner
     puts 'Player 1 is the winner'
-    # display the winner of the game
-  end
-
-  def clear_board
-    # reset the board for new game
+    # Display the winner of the game
   end
 end
 
 interface = Interface.new
+
+interface.clear_screen
+
 puts 'Creating Board' # board = Board.new
 puts 'Creating player 1 with "X" mark' # player1 = Player.new('X')
 puts 'Creating player 2 with "O" mark' # player2 = Player.new('O')
+puts
 
 interface.welcome
 
+interface.clear_screen
+
 turn = 1 # needed for the mockup
 while turn < 5 # while !board.empty?
-  interface.clear_screen
   interface.show_board
   if turn.odd?
     interface.play_turn('player1') # board.add(interface.play_turn('player1'))
+    interface.clear_screen
     puts 'checking if the move is valid'
     puts 'adding the mark from the player 1 to the board'
   else
     interface.play_turn('player2') # board.add(interface.play_turn('player1'))
+    interface.clear_screen
     puts 'checking if the move is valid'
     puts 'adding the mark from the player 2 to the board'
   end
+  puts
   turn += 1 # simulating the turn order. The while loop should break if the board is full of if there is a winner
 end
+
+puts
 
 interface.display_winner

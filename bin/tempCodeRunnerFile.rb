@@ -1,0 +1,1 @@
+interface.clear_screen

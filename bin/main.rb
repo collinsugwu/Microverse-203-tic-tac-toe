@@ -30,6 +30,7 @@ class Interface
   end
 
   def welcome
+    clear_screen
     puts 'Welcome to the Tic-Tac-Toe game'
     rules
     puts 'Press ENTER key to continue'
@@ -42,7 +43,8 @@ class Interface
 
   def display_board
     puts 'this is the board you are playing on'
-    puts 'Player 1: Collins (X)           Player 2: Jair (O)'
+    puts "=========== TURN #{@board.turn} ==========="
+    puts 'Player 1: [ X ]           Player 2: [ O ]'
     puts
     puts "1 | 2 | 3                      #{@board.position[0]} | #{@board.position[1]} | #{@board.position[2]}"
     puts '-------                        ---------'
@@ -56,25 +58,31 @@ class Interface
     player = @board.check_turn
     puts "#{player}: select position of the symbol on the board"
     position = gets.chomp
-    validate = @board.validate_position(position)
-    if !validate
+
+    result = @board.validate_position?(position)
+    if result == true
+      @board.position = position
+    else
       puts 'Invalid Position'
       play_turn
-    else
-      @board.position = position
     end
   end
 
   def display_winner
+    clear_screen
     display_board
-    puts 'Checking if there is a winner, or there is a draw...'
-    # Calling the logic method to check winner
-    puts 'Player 1 is the winner'
-    # Display the winner of the game
+    if @board.winner == 1
+      puts 'Player1 Wins'
+    elsif @board.winner == 2
+      puts 'Player2 wins'
+    else
+      puts 'its a draw'
+    end
   end
 
   def play
-    until @board.full?
+    until @board.winner.positive?
+      clear_screen
       display_board
       play_turn
     end
@@ -90,3 +98,9 @@ class Interface
     puts 'Each player takes a turn to select a position for the symbol'
   end
 end
+
+interface = Interface.new
+
+interface.welcome
+interface.play
+interface.display_winner

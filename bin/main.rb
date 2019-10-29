@@ -87,7 +87,6 @@ end
 
 interface = Interface.new
 
-
 interface.clear_screen
 
 puts 'Creating Board' # board = Board.new

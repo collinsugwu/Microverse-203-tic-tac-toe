@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'player.rb'
-
 class Board
   attr_reader :position, :turn
 
-  # @turn = 0
   def initialize
     @position = Array.new(9, ' ')
     @turn = 1
@@ -52,19 +49,10 @@ class Board
   end
 
   def validate_position?(position)
-    # position = position.to_i
-    # return false unless position.between?(1, 9)
-    return false unless position.to_i.is_a? Integer
-    return false unless position.to_i.between?(1, 9)
-    return false unless @position[position.to_i - 1] == ' '
+    return 1 unless position.to_i.is_a? Integer
+    return 2 unless position.to_i.between?(1, 9)
+    return 3 unless @position[position.to_i - 1] == ' '
 
-    true
+    0
   end
-
-  # private
-
-  # def board_position(position)
-  #   position -= 1
-  #   @position[position]
-  # end
 end

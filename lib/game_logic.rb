@@ -16,6 +16,29 @@
 # if variable.positive?
 #
 
+class Player
+  @player_hash = Hash.new(0)
+  def initialize(player_name)
+    @player_name = player_name
+    if @player_hash.empty?
+      @player_hash[:first_player] = @player_name
+    else
+      @player_hash[:second_player] = @player_name
+    end
+  end
+
+  def player
+    @player_name
+  end
+end
+
+class Mark < Player
+  @player_mark = Hash.new(0)
+  def initialize(mark)
+    @mark = mark
+  end
+end
+
 class Board
   def initialize
     @board = Array.new(9, 0)

@@ -2,6 +2,8 @@
 
 # frozen_string_literal: true
 
+require_relative '../lib/board.rb'
+
 # puts 'Hello world!'
 
 # 1.-   Welcome message
@@ -26,7 +28,8 @@ class Interface
   attr_accessor :pos
 
   def initialize
-    @pos = Array.new(9, ' ')
+    # @pos = Array.new(9, ' ')
+    @board = Board.new
   end
 
   def welcome
@@ -41,18 +44,19 @@ class Interface
   end
 
   def add(symbol, position)
-    @pos[position] = symbol
+    # @pos[position] = symbol
+    @board.position[position] = symbol
   end
 
-  def show_board
+  def display_board
     puts 'this is the board you are playing on'
     puts 'Player 1: Collins (X)           Player 2: Jair (O)'
     puts
-    puts "1 | 2 | 3                      #{@pos[0]} | #{@pos[1]} | #{@pos[2]}"
+    puts "1 | 2 | 3                      #{@board.position[0]} | #{@board.position[1]} | #{@board.position[2]}"
     puts '-------                        ---------'
-    puts "4 | 5 | 6                      #{@pos[3]} | #{@pos[4]} | #{@pos[5]}"
+    puts "4 | 5 | 6                      #{@board.position[3]} | #{@board.position[4]} | #{@board.position[5]}"
     puts '-------                        ---------'
-    puts "7 | 8 | 9                      #{@pos[6]} | #{@pos[7]} | #{@pos[8]}"
+    puts "7 | 8 | 9                      #{@board.position[6]} | #{@board.position[7]} | #{@board.position[8]}"
     puts
   end
 
@@ -68,12 +72,12 @@ class Interface
     # check if there is a winner or if a draw else repeat the process with the next play
   end
 
-  def error
+  def display_error
     puts 'invalid move, please pick another position'
   end
 
   def display_winner
-    show_board
+    display_board
     puts 'Checking if there is a winner, or there is a draw...'
     # Calling the logic method to check winner
     puts 'Player 1 is the winner'
@@ -97,7 +101,7 @@ interface.clear_screen
 
 turn = 1 # needed for the mockup
 while turn <= 9 # while !board.empty?
-  interface.show_board
+  interface.display_board
   if turn.odd?
     interface.play_turn('X', 'player1') # board.add(interface.play_turn('player1'))
     interface.clear_screen

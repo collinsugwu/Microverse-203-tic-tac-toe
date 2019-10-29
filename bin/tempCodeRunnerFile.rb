@@ -1,1 +1,0 @@
-interface.clear_screen

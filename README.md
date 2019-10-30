@@ -37,13 +37,13 @@
   <p align="center">
     A small Tic-Tac-Toe game you can play on your terminal
     <br />
-    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/README.md"><strong>Explore the docs ï¿½</strong></a>
     <br />
     <br />
     <a href="https://www.theodinproject.com/courses/ruby-programming/lessons/oop">Assigment</a>
-    ·
+    ï¿½
     <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Report Bug</a>
-    ·
+    ï¿½
     <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Request Feature</a>
   </p>
 </p>
@@ -75,7 +75,7 @@
 </p>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3ï¿½3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
 This is a small program made in Ruby about the Tic-Tac-Toe game. You can play this game with a friend.
 
@@ -125,7 +125,7 @@ const API_KEY = 'ENTER YOUR API';
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This game has two players, Player 1, which symbol is "X" and Player 2, which symbol is "O". The objective of the game is to take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+This game has two players, Player 1, which symbol is "X" and Player 2, which symbol is "O". The objective of the game is to take turns marking the spaces in a 3x3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
 The following example game is won by the first player, X:
 

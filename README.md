@@ -22,7 +22,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -33,7 +32,7 @@
     <img src="doc/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Microverse-203-tic-tac-toe</h3>
+  <h3 align="center">Tic-Tac-Toe Game</h3>
 
   <p align="center">
     A small Tic-Tac-Toe game you can play on your terminal
@@ -140,7 +139,7 @@ The following example game is won by the first player, X:
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues) for a list of proposed features (and known issues).
 
 
 
@@ -186,15 +185,13 @@ Project Link: [https://github.com/collinsugwu/Microverse-203-tic-tac-toe](https:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[contributors-url]: https://github.com/collinsugwu/Microverse-203-tic-tac-toe/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/collinsugwu/Microverse-203-tic-tac-toe
+[forks-url]: https://github.com/collinsugwu/Microverse-203-tic-tac-toe/network/members
+[stars-shield]: https://img.shields.io/github/stars/collinsugwu/Microverse-203-tic-tac-toe
+[stars-url]: https://github.com/collinsugwu/Microverse-203-tic-tac-toe/stargazers
+[issues-shield]: https://img.shields.io/github/issues/collinsugwu/Microverse-203-tic-tac-toe
+[issues-url]: https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues
+[license-shield]: https://img.shields.io/github/license/collinsugwu/Microverse-203-tic-tac-toe
+[license-url]: https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/LICENSE.txt
+[product-screenshot]: doc/screenshot-3.png

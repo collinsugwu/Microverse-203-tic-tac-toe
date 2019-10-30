@@ -46,23 +46,23 @@ Github Link:
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://www.microverse.org/">
+    <img src="doc/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Microverse-203-tic-tac-toe</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A small Tic-Tac-Toe game you can play on your terminal
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a> -->
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Request Feature</a>
   </p>
 </p>
 
@@ -90,54 +90,50 @@ Github Link:
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+This is a small program made in Ruby about the Tic-Tac-Toe game. You can play this game with a friend.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+This program was made from students of the Microverse programming school as an exercise to learn how to code Ruby.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+This progam was made using this technologies
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Rubocop](https://github.com/rubocop-hq/rubocop)
+* [Stickler](https://stickler-ci.com/)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Ruby
+You can easily install Ruby on your Linux computer by using [Homebrew](https://docs.brew.sh/) and [Chruby](https://github.com/postmodern/chruby)
 ```sh
-npm install npm@latest -g
+brew install chruby
+brew install ruby-install
+ruby-install ruby
 ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+<!-- 1. Get a free API Key at [https://example.com](https://example.com) -->
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/collinsugwu/Microverse-203-tic-tac-toe.git
 ```
-3. Install NPM packages
+<!-- 3. Install NPM packages
 ```sh
 npm install
-```
-4. Enter your API in `config.js`
+``` -->
+<!-- 4. Enter your API in `config.js`
 ```JS
 const API_KEY = 'ENTER YOUR API';
-```
+``` -->
 
 
 

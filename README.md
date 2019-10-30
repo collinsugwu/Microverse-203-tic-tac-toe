@@ -1,20 +1,3 @@
-# Microverse-203-tic-tac-toe
-
-This is the 3rd project of the Main Ruby curriculum at [Microverse](https://www.microverse.org)
-
-Remember Tic Tac Toe? See Wikipedia if you canâ€™t remember the rules, or if you havenâ€™t ever played. It involves a couple of players, a simple board, checking for victory in a game loopâ€¦ all the conditions that make it a fun little problem to solve using our newfound OOP sea legs. Letâ€™s build it!
-
-* #### [Assignment description](https://www.theodinproject.com/courses/ruby-programming/lessons/oop)
-
-Contributor:
-
-* Collins Ugwu: [Github](https://github.com/collinsugwu)
-
-* Jair Jaramillo: [Github](https://github.com/jairjy), [Twitter](https://twitter.com/jairjy)
-
-Github Link:
-[here](https://github.com/collinsugwu/Microverse-203-tic-tac-toe)
-
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
 *** make this better, please fork the repo and create a pull request or simply open
@@ -58,7 +41,7 @@ Github Link:
     <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a> -->
+    <a href="https://www.theodinproject.com/courses/ruby-programming/lessons/oop">Assigment</a>
     ·
     <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Report Bug</a>
     ·
@@ -88,7 +71,10 @@ Github Link:
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<p align="center">
+    <img src="doc/screenshot-3.png" alt="Screenshot">
+</p>
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
@@ -140,9 +126,14 @@ const API_KEY = 'ENTER YOUR API';
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This game has two players, Player 1, which symbol is "X" and Player 2, which symbol is "O". The objective of the game is to take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The following example game is won by the first player, X:
+
+<p align="center">
+    <img src="doc/examples.png" alt="Examples">
+</p>
+
 
 
 
@@ -176,26 +167,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+* Collins Ugwu: [Github](https://github.com/collinsugwu), [Twitter](https://twitter.com/collinsugwu_me
+)
 
+* Jair Jaramillo: [Github](https://github.com/jairjy), [Twitter](https://twitter.com/jairjy)
 
+Project Link: [https://github.com/collinsugwu/Microverse-203-tic-tac-toe](https://github.com/collinsugwu/Microverse-203-tic-tac-toe)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
+* [Microverse](https://www.microverse.org/)
+* [The Odin Project](https://www.theodinproject.com/)
 
 
 

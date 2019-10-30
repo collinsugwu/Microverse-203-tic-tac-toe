@@ -71,6 +71,8 @@
 ## About The Project
 
 <p align="center">
+    <img src="doc/screenshot-1.png" alt="Screenshot">
+    <img src="doc/screenshot-2.png" alt="Screenshot">
     <img src="doc/screenshot-3.png" alt="Screenshot">
 </p>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->

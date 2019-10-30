@@ -37,12 +37,15 @@ class Board
 
   # returns 1 if player 1 wins, returns 2 if player 2 wins, returns 0 if there is no winner, and returns 3 if there is a draw
   def winner
-    3.times { |i| return 1 if @position[0 + (i * 3)] == 'X' && @position[1 + (i * 3)] == 'X' && @position[2 + (i * 3)] == 'X' }
-    3.times { |i| return 1 if @position[0 + i] == 'X' && @position[3 + i] == 'X' && @position[6 + i] == 'X' }
-    2.times { |i| return 1 if @position[0 + (i * 2)] == 'X' && @position[4] == 'X' && @position[8 - (i * 2)] == 'X' }
-    3.times { |i| return 2 if @position[0 + (i * 3)] == 'O' && @position[1 + (i * 3)] == 'O' && @position[2 + (i * 3)] == 'O' }
-    3.times { |i| return 2 if @position[0 + i] == 'O' && @position[3 + i] == 'O' && @position[6 + i] == 'O' }
-    2.times { |i| return 2 if @position[0 + (i * 2)] == 'O' && @position[4] == 'O' && @position[8 - (i * 2)] == 'O' }
+    3.times do |i|
+      return 1 if @position[0 + (i * 3)] == 'X' && @position[1 + (i * 3)] == 'X' && @position[2 + (i * 3)] == 'X'
+      return 1 if @position[0 + i] == 'X' && @position[3 + i] == 'X' && @position[6 + i] == 'X'
+      return 2 if @position[0 + (i * 3)] == 'O' && @position[1 + (i * 3)] == 'O' && @position[2 + (i * 3)] == 'O'
+      return 2 if @position[0 + i] == 'O' && @position[3 + i] == 'O' && @position[6 + i] == 'O'
+      return 1 if @position[0 + (i * 2)] == 'X' && @position[4] == 'X' && @position[8 - (i * 2)] == 'X' && i < 2
+      return 2 if @position[0 + (i * 2)] == 'O' && @position[4] == 'O' && @position[8 - (i * 2)] == 'O' && i < 2
+    end
+
     return 3 if full?
 
     0

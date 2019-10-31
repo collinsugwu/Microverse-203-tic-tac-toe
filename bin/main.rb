@@ -23,10 +23,12 @@
 #
 
 class Interface
-  attr_accessor :pos
+  attr_accessor :pos, :turn
 
   def initialize
     @pos = Array.new(9, ' ')
+    @counter = 0
+    @turn = 1
   end
 
   def welcome
@@ -42,10 +44,12 @@ class Interface
 
   def add(symbol, position)
     @pos[position] = symbol
+    @turn += 1
   end
 
   def show_board
     puts 'this is the board you are playing on'
+    puts "TURN: #{@turn}"
     puts 'Player 1: Collins (X)           Player 2: Jair (O)'
     puts
     puts "1 | 2 | 3                      #{@pos[0]} | #{@pos[1]} | #{@pos[2]}"
@@ -79,6 +83,13 @@ class Interface
     puts 'Player 1 is the winner'
     # Display the winner of the game
   end
+
+  def winner
+    @counter += 1
+    return true if @counter == 9
+
+    false
+  end
 end
 
 interface = Interface.new
@@ -94,10 +105,11 @@ interface.welcome
 
 interface.clear_screen
 
-turn = 1 # needed for the mockup
-while turn <= 9 # while !board.empty?
+game_on = true
+
+while game_on # while !board.empty?
   interface.show_board
-  if turn.odd?
+  if interface.turn.odd?
     interface.play_turn('X', 'player1') # board.add(interface.play_turn('player1'))
     interface.clear_screen
     puts 'checking if the move is valid'
@@ -109,7 +121,8 @@ while turn <= 9 # while !board.empty?
     puts 'adding the mark from the player 2 to the board'
   end
   puts
-  turn += 1 # simulating the turn order. The while loop should break if the board is full of if there is a winner
+
+  game_on = false if interface.winner
 end
 
 puts

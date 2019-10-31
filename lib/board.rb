@@ -38,17 +38,21 @@ class Board
   # returns 1 if player 1 wins, returns 2 if player 2 wins, returns 0 if there is no winner, and returns 3 if there is a draw
   def winner
     3.times do |i|
-      return 1 if (@position[0 + (i * 3)] == 'X' && @position[1 + (i * 3)] == 'X' && @position[2 + (i * 3)] == 'X') ||
-                  (@position[0 + i] == 'X' && @position[3 + i] == 'X' && @position[6 + i] == 'X') ||
-                  (@position[0 + (i * 2)] == 'X' && @position[4] == 'X' && @position[8 - (i * 2)] == 'X' && i < 2)
-      return 2 if (@position[0 + (i * 3)] == 'O' && @position[1 + (i * 3)] == 'O' && @position[2 + (i * 3)] == 'O') ||
-                  (@position[0 + i] == 'O' && @position[3 + i] == 'O' && @position[6 + i] == 'O') ||
-                  (@position[0 + (i * 2)] == 'O' && @position[4] == 'O' && @position[8 - (i * 2)] == 'O' && i < 2)
+      return 1 if all_equal(i, 'X')
+      return 2 if all_equal(i, 'O')
     end
 
     return 3 if full?
 
     0
+  end
+
+  def all_equal(index, player_symbol)
+    return true if (@position[0 + (index * 3)] + @position[1 + (index * 3)] + @position[2 + (index * 3)] == player_symbol * 3) ||
+                   (@position[0 + index] + @position[3 + index] + @position[6 + index] == player_symbol * 3) ||
+                   (@position[0 + (index * 2)] + @position[4] + @position[8 - (index * 2)] == player_symbol * 3 && index < 2)
+
+    false
   end
 
   def validate_position?(position)

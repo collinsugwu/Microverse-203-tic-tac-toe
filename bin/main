@@ -12,6 +12,7 @@ class Interface
   def welcome
     clear_screen
     puts 'Welcome to the Tic-Tac-Toe game'
+    puts
     rules
     puts
     puts 'Press ENTER key to continue'
@@ -71,10 +72,12 @@ class Interface
   private
 
   def rules
-    puts 'Obey these  rules and have a wonderfull experience'
-    puts 'The first person to play become player1 with a symbol of X'
-    puts 'The Second person to play become player2 with a symbol of O'
-    puts 'Each player takes a turn to select a position for the symbol'
+    puts ' Obey these rules and have a wonderfull experience'
+    puts
+    puts ' This game has two players, Player 1, which symbol is "X" and Player 2, which symbol is "O".'
+    puts ' The objective of the game is to take turns marking the spaces in a 3x3 grid.'
+    puts ' The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.'
+    puts ' The game is a draw if both players fails to place three of their symbols in a horizontal, vertical, or diagonal row.'
   end
 
   def display_error(result)

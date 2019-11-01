@@ -37,13 +37,13 @@
   <p align="center">
     A small Tic-Tac-Toe game you can play on your terminal
     <br />
-    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/README.md"><strong>Explore the docs �</strong></a>
+    <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/blob/master/README.md"><strong>Explore the docs</strong></a>
     <br />
     <br />
     <a href="https://www.theodinproject.com/courses/ruby-programming/lessons/oop">Assigment</a>
-    �
+    -
     <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Report Bug</a>
-    �
+    -
     <a href="https://github.com/collinsugwu/Microverse-203-tic-tac-toe/issues">Request Feature</a>
   </p>
 </p>
@@ -71,9 +71,7 @@
 ## About The Project
 
 <p align="center">
-    <img src="doc/screenshot-1.png" alt="Screenshot">
-    <img src="doc/screenshot-2.png" alt="Screenshot">
-    <img src="doc/screenshot-3.png" alt="Screenshot">
+    <img src="doc/demo.gif" alt="Screenshot">
 </p>
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 

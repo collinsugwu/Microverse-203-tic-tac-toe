@@ -37,8 +37,7 @@ class Interface
   end
 
   def play_turn
-    player = @board.check_turn
-    puts "#{player}: select position of the symbol on the board"
+    puts "Player #{@board.check_turn}: select position of the symbol on the board"
     position = gets.chomp
 
     result = @board.validate_position?(position)
@@ -54,11 +53,11 @@ class Interface
     clear_screen
     display_board
     if @board.winner == 1
-      puts 'Player1 Wins'
+      puts 'Player 1 Wins'
     elsif @board.winner == 2
-      puts 'Player2 wins'
+      puts 'Player 2 Wins'
     else
-      puts 'its a draw'
+      puts 'Its a Draw'
     end
   end
 

@@ -111,14 +111,16 @@ ruby-install ruby
 ```sh
 git clone https://github.com/collinsugwu/Microverse-203-tic-tac-toe.git
 ```
-<!-- 3. Install NPM packages
+ 2. Run Tic-tac-toe on Windows
 ```sh
-npm install
-``` -->
-<!-- 4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-``` -->
+.\main.bat
+``` 
+Or open the folder and double click on the main.bat file.
+
+ 3. Run Tic-tac-toe on linux and mac
+```
+./bin/main
+``` 
 
 
 

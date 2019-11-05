@@ -3,8 +3,7 @@
 require_relative '../lib/board.rb'
 
 RSpec.describe Board do
-  board = Board.new
-  validate = Board.new
+  let(:board) { Board.new }
 
   it 'should return "True" as the board is empty, has no elements' do
     expect(board.empty?).to eq true
@@ -27,7 +26,8 @@ RSpec.describe Board do
     expect(board.position[1]).to be 'X'
   end
 
-  it 'should add an "O" symbol to the thrid position of the board' do
+  it 'should add an "O" symbol to the third position of the board' do
+    board.position = 1
     board.position = 3
     expect(board.position[2]).to be 'O'
   end
@@ -41,7 +41,8 @@ RSpec.describe Board do
     expect(board.position[5]).to be_an(String)
   end
 
-  it 'should return "False" as the board is empty, has no elements' do
+  it 'should return "False" as the board is not empty, has some elements' do
+    board.position = 1
     expect(board.empty?).to eq false
   end
 
@@ -53,53 +54,47 @@ RSpec.describe Board do
   end
 
   it 'should return 1 as the winner is the player 1' do
-    play1 = Board.new
+    board.position = 1
+    board.position = 5
+    board.position = 2
+    board.position = 6
+    board.position = 3
 
-    play1.position = 1
-    play1.position = 5
-    play1.position = 2
-    play1.position = 6
-    play1.position = 3
-
-    expect(play1.winner).to be 1
+    expect(board.winner).to be 1
   end
 
   it 'should return 2 as the winner is the player 2' do
-    play1 = Board.new
+    board.position = 1
+    board.position = 5
+    board.position = 2
+    board.position = 6
+    board.position = 9
+    board.position = 4
 
-    play1.position = 1
-    play1.position = 5
-    play1.position = 2
-    play1.position = 6
-    play1.position = 9
-    play1.position = 4
-
-    expect(play1.winner).to be 2
+    expect(board.winner).to be 2
   end
 
   it 'should return 3 as there is a draw' do
-    play1 = Board.new
+    board.position = 1
+    board.position = 2
+    board.position = 3
+    board.position = 6
+    board.position = 4
+    board.position = 7
+    board.position = 5
+    board.position = 9
+    board.position = 8
 
-    play1.position = 1
-    play1.position = 2
-    play1.position = 3
-    play1.position = 6
-    play1.position = 4
-    play1.position = 7
-    play1.position = 5
-    play1.position = 9
-    play1.position = 8
-
-    expect(play1.winner).to be 3
+    expect(board.winner).to be 3
   end
 
   it 'should return 1 as the added position is not an integer' do
-    expect(validate.validate_position?('stuff')).to be 1
-    expect(validate.validate_position?('2.3')).to be 1
+    expect(board.validate_position?('stuff')).to be 1
+    expect(board.validate_position?('2.3')).to be 1
   end
 
   it 'should return 2 as the added position is not in the range between 1 and 9' do
-    expect(validate.validate_position?('23')).to be 2
-    expect(validate.validate_position?('400')).to be 2
+    expect(board.validate_position?('23')).to be 2
+    expect(board.validate_position?('400')).to be 2
   end
 end

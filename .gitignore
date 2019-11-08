@@ -80,7 +80,3 @@ $RECYCLE.BIN/
 /js/bootstrap.bundle.js
 /js/bootstrap.bundle.js.map
 /js/bootstrap.bundle.min.js.map
-
-# Files requested by the TSE
-LICENSE
-main.bat

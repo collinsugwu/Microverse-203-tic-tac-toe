@@ -18,7 +18,7 @@ class Board
 
   def empty?
     @position.size.times do |x|
-      return false unless @position[x] != @empty_space
+      return false if @position[x] != @empty_space
     end
     true
   end
@@ -57,7 +57,7 @@ class Board
   end
 
   def validate_position?(position)
-    return 1 unless position.to_i.is_a? Integer
+    return 1 unless position.match(/^(\d)+$/)
     return 2 unless position.to_i.between?(1, 9)
     return 3 unless @position[position.to_i - 1] == @empty_space
 

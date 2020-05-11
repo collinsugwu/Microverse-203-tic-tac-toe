@@ -122,7 +122,8 @@ Or open the folder and double click on the main.bat file.
 ./bin/main
 ``` 
 4. Run test
-``` rspec
+``` 
+rspec
 ```
 
 <!-- USAGE EXAMPLES -->
